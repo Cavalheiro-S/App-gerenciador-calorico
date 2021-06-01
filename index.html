@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações necessárias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="logo">GCC Project</span>
+    </header>
+    <main>
+        <form class="form-personInfo" action="">
+            <h3 class="personInfo-title">Cadastro do Usúario </h3>
+            <div class="div-input">
+                <input class="personInfo-input" type="text" name="input-text" id="" placeholder="EX: Lucas Cavalheiro" required> 
+                <label class="personInfo-label" for="input-text">Nome</label>
+            </div>
+            
+            <div class="div-input">
+                <div class="input-placeholder">
+                    <input class="personInfo-input input-height" type="text" name="input-height" id="" placeholder="EX: 1.70" required pattern="[1-3][,.][0-9]{2}">
+                    <label class="personInfo-label personInfo-height" for="input-height">m</label>
+                </div>                
+                <label class="personInfo-label" for="input-height">Altura</label>
+            </div>
+            
+            <div class="div-input">
+                <div class="input-placeholder">
+                    <input class="personInfo-input input-weight" type="text" name="input-weight" id="" placeholder="EX: 70" required pattern="[0-9]{2}[0-9]?">
+                    <label class="personInfo-label personInfo-weight" for="input-weight">Kg</label>
+                </div>
+                <label class="personInfo-label" for="input-weight">Peso</label>
+            </div>
+            <button class="personInfo-button">Enviar</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

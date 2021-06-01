@@ -1,0 +1,129 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #F1FAEE;
+    box-sizing: border-box;
+    display: grid;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 10%;
+    height: 100%;
+    margin: 0%;
+}
+header{
+    background-color: #1D3557;
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo{
+    background-color: #E63946;
+    border-radius: 5px;
+    color: #F1FAEE;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    height: 30%;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 3rem;
+}
+
+main{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+}
+
+footer{
+    background-color: #1D3557;
+    grid-column: 1/2; 
+    grid-row: 3/4;
+}
+.form-personInfo{
+    align-items: center;
+    background-color: #457B9D;
+    border-radius: 10px;
+    box-shadow: -4px 5px 10px 0 rgba(0,0,0,0.24);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    height: 400px;
+    margin-top: 2rem;
+    padding: 0 3em;
+    width: 300px;
+}
+
+.personInfo-title{
+    color: #F1FAEE;
+}
+
+.div-input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.personInfo-input{
+    background-color: #e5e5e5;
+    border:none;
+    border-radius: 5px;
+    font-size: .7em;
+    font-family: 'Rubik', sans-serif;
+    height: 1.5rem;
+    margin: 1em 0;
+    outline: none;
+    padding: 0.5em 0.3em;
+    width: 100%;
+}
+
+.input-height, .input-weight{
+    width: 30%;
+}
+
+.personInfo-label{
+    color: #FFFF;
+    font-size: 1.2rem;
+    padding: 0px .5rem;
+    position: absolute;
+    transform: translateY(-.5em) translateX(-.3em);
+}
+
+.personInfo-height, .personInfo-weight{
+    font-size: 1em;
+    position: absolute;
+    transform: translateY(1em) translateX(4em);
+}
+
+.input-placeholder{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.personInfo-button{
+    background-color: #E63946;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -4px 5px 5px 0 rgba(0,0,0,0.24);
+    color: #F1FAEE;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    transition: ease .2s all;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.personInfo-button:hover{
+    box-shadow: none;
+}
