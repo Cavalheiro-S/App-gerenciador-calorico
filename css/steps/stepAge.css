@@ -1,0 +1,36 @@
+.stepAge{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputPlaceholder{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.inputAge{
+    width: 20%;
+}
+
+.inputPlaceholder input{
+    appearance:none;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    margin-right: .5em;
+    width: 80px;
+}
+
+.inputPlaceholder label{
+    border-radius: 5px;
+    background-color: #35BA9B;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+}
