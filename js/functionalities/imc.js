@@ -1,26 +1,17 @@
-const inputAge = document.querySelector("[data-input='age']");
-const inputHeight = document.querySelector("[data-input='height']");
-const inputWeight = document.querySelector("[data-input='weight']");
-const divResult = document.querySelector("[data-result]");
+import {inputValues} from "../takeValues.js"
 
 function calcIMC(weight,height){
     let imc = weight/(height*2)*100;
     return imc.toFixed(1);
 }
 
-function addResult(){
-    let age = 0;
-    let weight = 0;
-    let height = 0;
-    age = inputAge.value;
-    weight = inputWeight.value;
-    height = inputHeight.value;
+function takeValuesIMC(){
+    let weight, height = 0;
+    [weight, height] = inputValues();
 
-    const imcValue = document.createElement("span");
     let imc = calcIMC(weight,height);
     let textImc = validationIMC(imc);
-    imcValue.textContent = textImc +" "+ imc;
-    divResult.appendChild(imcValue);
+    return [imc,textImc];
 }
 
 function validationIMC(imc){
@@ -48,4 +39,4 @@ function validationIMC(imc){
     }
 }
 
-export{addResult};
+export{takeValuesIMC};

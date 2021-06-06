@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/steps/stepHeight.css">
     <link rel="stylesheet" href="./css/steps/stepWeight.css">
     <link rel="stylesheet" href="./css/steps/stepResult.css">
+    <link rel="stylesheet" href="./css/steps/stepActivity.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
@@ -60,8 +61,27 @@
                     <label for="height">cm</label>
                 </div>
             </div>
+            <div class="step stepActivity">
+                <h3 class="step-title">Informe seu grau de atividade:</h3>
+                <div class="divActivity">
+                    <div class="activity" data-activity="sedentary">Sedentário</div>
+                    <div class="activity" data-activity="little active">Pouco ativo</div>
+                    <div class="activity" data-activity="moderate active">Moderadamente ativo</div>
+                    <div class="activity" data-activity="very active">Muito ativo</div>
+                    <div class="activity" data-activity="extremely active">Extremamente ativo</div>
+                </div>
+                
+            </div>
             <div class="result" data-result>
-                <h3>Resultado</h3>
+                <h3 class="result-Title">Resultado</h3>
+                <div class="div-result" data-div="imc">
+                    <div data-div="textIMC"></div>
+                    <div data-div="valueIMC"></div>
+                </div>
+                <div class="div-result" data-div="tmb">
+                    <div data-div="textTMB"></div>
+                    <div data-div="valueTMB"></div>
+                </div>
             </div>
         </div>
         
@@ -69,6 +89,8 @@
     </main>
     <footer></footer>
     <script src="./js/steps/stepGenre.js" type="module"></script>
+    <script src="./js/steps/stepActivity.js" type="module"></script>
+    <script src="./js/takeValues.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
 </body>
 </html>

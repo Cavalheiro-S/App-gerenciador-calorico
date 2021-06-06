@@ -12,6 +12,7 @@
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+    transition: ease .5s all;
 }
 
 .gender-image{

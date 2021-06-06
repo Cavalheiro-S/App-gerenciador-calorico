@@ -17,7 +17,6 @@ function genderSelected(item){
             btnManClicked = true;
             btnWomanClicked = false;
         }
-        console.log("Botão homem clicado:"+btnManClicked+"\nBotão mulher clicado:"+btnWomanClicked);
     }
     else if(item.dataset.gender == "woman"){
         if(btnGenderMan.classList.contains("btn-active")){
@@ -31,7 +30,6 @@ function genderSelected(item){
             btnWomanClicked = true;
             btnManClicked = false;
         }
-        console.log("Botão homem clicado:"+btnManClicked+"\nBotão mulher clicado:"+btnWomanClicked);
     }
 
     if(btnManClicked){
