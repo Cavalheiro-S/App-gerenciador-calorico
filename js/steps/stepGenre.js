@@ -1,8 +1,7 @@
-const btnGenderMan = document.querySelector("[data-btnGender='man']");
-const btnGenderWoman = document.querySelector("[data-btnGender='woman']");
-
 
 function genderSelected(item){
+    const btnGenderMan = document.querySelector("[data-btnGender='man']");
+    const btnGenderWoman = document.querySelector("[data-btnGender='woman']");
     let btnManClicked = false;
     let btnWomanClicked = false;
     if(item.dataset.gender == "man"){
@@ -42,4 +41,14 @@ function genderSelected(item){
     return "empty";
 }
 
-export {genderSelected}
+
+function checkGender(item){
+    if(item.classList.contains("btn-active")){
+        return false
+    }
+    else if(!item.classList.contains("btn-active")){
+        return true;
+    }
+}
+
+export {genderSelected,checkGender}

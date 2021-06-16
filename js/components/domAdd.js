@@ -1,5 +1,4 @@
 const divResult = document.querySelector("[data-result]");
-const divImc = document.querySelector("[data-div='imc']");
 const textIMC = document.querySelector("[data-div='textIMC']");
 const valueIMC = document.querySelector("[data-div='valueIMC']");
 const textTMB = document.querySelector("[data-div='textTMB']");

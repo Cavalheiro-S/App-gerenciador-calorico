@@ -1,27 +1,35 @@
 .stepActivity{
-    width: 1000px;
+    width: 40vw;
+    flex-grow: 5;
 }
 
 .divActivity{
     display: flex;
+    justify-content: space-around;
+}
+
+.activityContent img{
+    height: 71px;
+    width: 71px;
 }
 
 .activity{
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: #2C2C2C;
+    background-color: #F5B945;
     border-radius: 5px;
-    color: white;
+    color: #2C2C2C;
     cursor: pointer;
-    height: 100px;
+    height: 50px;
     padding: 10px;
     transition: ease .3s all;
     margin: 1rem;
-    width: 200px;
+    width: 150px;
 }
 
+
 .activity:hover{
-    background-color:#F5B945 ;
-    color: #2C2C2C;
+    background-color:#35BA9B ;
+    color: white;
 }

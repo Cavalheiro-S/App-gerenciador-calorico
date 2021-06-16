@@ -18,12 +18,19 @@
 </head>
 <body>
     <header>
-        <span class="logo">GCC Project</span>
+        <div class="logo">
+            <span class="logoTitle">GCC project</span>
+            <img src="./img/Logo.png" alt="">
+        </div>
     </header>
     <main>
-        <h2 class="title">Calcular seu IMC</h2>
+        <div class="div-titles">
+            <h2 class="title">Calcule sua taxa metabólica diária</h2>
+            <h3 class="subTitle">para calcular é necessário que você informe algumas caracteristicas suas</h3>
+        </div>
+        
         <div class="steps">
-            <div class="step stepGender" >
+            <div class="step stepGender" data-step="gender">
                 <h3 class="step-title">Selecione seu sexo:</h3>
                 <div class="genres">
                     <div class="gender" data-gender="man">
@@ -40,21 +47,21 @@
                     </div>
                 </div>
             </div>
-            <div class="step stepAge">
+            <div class="step stepAge" data-step="age">
                 <h3 class="step-title">Informe sua idade:</h3>
                 <div class="inputPlaceholder inputAge">
                     <input type="number" name="age" data-input="age" id="input-age" required placeholder="20" maxlength="3" pattern="[0-9]*" min="1" tabindex="0" inputmode="numeric">
                     <label for="age">anos</label>
                 </div>
             </div>
-            <div class="step stepWeight">
+            <div class="step stepWeight" data-step="weight">
                 <h3 class="step-title">Informe seu peso:</h3>
                 <div class="inputPlaceholder inputWeight">
                     <input type="number" name="weight" data-input="weight" required id="input-weight" placeholder="70" maxlength="3" pattern="[0-9]*" min="10" tabindex="0" inputmode="numeric">
                     <label for="weight">kg</label>
                 </div>
             </div>
-            <div class="step stepHeight">
+            <div class="step stepHeight" data-step="height">
                 <h3 class="step-title">Informe sua altura:</h3>
                 <div class="inputPlaceholder inputHeight">
                     <input type="number" name="height" data-input="height" required id="input-height" placeholder="170" maxlength="3" pattern="[0-9]*" min="50" tabindex="0" inputmode="numeric">
@@ -64,11 +71,26 @@
             <div class="step stepActivity">
                 <h3 class="step-title">Informe seu grau de atividade:</h3>
                 <div class="divActivity">
-                    <div class="activity" data-activity="sedentary">Sedentário</div>
-                    <div class="activity" data-activity="little active">Pouco ativo</div>
-                    <div class="activity" data-activity="moderate active">Moderadamente ativo</div>
-                    <div class="activity" data-activity="very active">Muito ativo</div>
-                    <div class="activity" data-activity="extremely active">Extremamente ativo</div>
+                    <div class="activityContent">
+                        <img src="./img/sedentário.png" alt="">
+                        <div class="activity" data-activity="sedentary">Sedentário</div>
+                    </div>
+                    <div class="activityContent">
+                        <img src="./img/poucoativo.png" alt="">
+                        <div class="activity" data-activity="little active">Pouco ativo</div>
+                    </div>
+                    <div class="activityContent">
+                        <img src="./img/moderadamente ativo.png" alt="">
+                        <div class="activity" data-activity="moderate active">Moderadamente ativo</div>
+                    </div>
+                    <div class="activityContent">
+                        <img src="./img/muitoativo.png" alt="">
+                        <div class="activity" data-activity="very active">Muito ativo</div>
+                    </div>
+                    <div class="activityContent">
+                        <img src="./img/extremamente ativo.png" alt="">
+                        <div class="activity" data-activity="extremely active">Extremamente ativo</div>
+                    </div>
                 </div>
                 
             </div>
@@ -82,9 +104,12 @@
                     <div data-div="textTMB"></div>
                     <div data-div="valueTMB"></div>
                 </div>
+                <div class="div-result" data-div="tmb">
+                    <div data-div="textTMB"></div>
+                    <div data-div="valueTMB"></div>
+                </div>
             </div>
         </div>
-        
         
     </main>
     <footer></footer>

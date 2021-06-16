@@ -14,14 +14,12 @@ function calcTMB(){
     let gender,activity = "";
     
     [weight,height,age,gender,activity] = inputValues();
-    console.log(weight,height,age,gender,activity);
     if(gender == "man"){
         tmb = (13.75*weight) + (5*height) - (6.76 * age) + 66.5;
     }
     else if(gender == "woman"){
         tmb = (13.75*weight) + (5*height) - (6.76 * age) + 665;
     }
-    console.log(activity);
     multiply = activityLevel(activity);
 
     kcal = tmb*multiply;
