@@ -15,14 +15,14 @@ function appendResultIMC(value, text){
     textIMC.classList.add("textResult");
     valueIMC.classList.add("valueResult");
     textIMC.textContent = text;
-    valueIMC.textContent = value;
+    valueIMC.textContent = `IMC ${value}`;
 }
 
 function appendResultTMB(value, text){
     textTMB.classList.add("textResult");
     valueTMB.classList.add("valueResult");
     textTMB.textContent = text;
-    valueTMB.textContent = value;
+    valueTMB.textContent = `${value} kcal`;
 }
 
 export {appendResult,appendResultIMC,appendResultTMB}
