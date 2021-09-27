@@ -38,10 +38,14 @@ header{
     margin: 0 3rem;
 }
 .logo img{
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     height: 71px;
     margin-left: 10px;
     width: 85px;
+}
+
+.logoTitle{
+    margin: 0px 10px 0px 10px
 }
 
 main{
