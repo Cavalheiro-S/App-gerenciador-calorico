@@ -11,6 +11,32 @@ Aplicativo Web desenvolvido com a finalidade de calcular o IMC(Índice de massa 
 ## Tela parte 3
 ![Tela Parte 3 ](https://github.com/Cavalheiro-S/Assets/blob/main/Gerenciador-Calorico/Tela-parte3.png)
 
+## 📦 Installing
+
+### Clonando o repositório
+```bash
+git clone https://github.com/Cavalheiro-S/App-gerenciador-calorico.git
+cd App-gerenciador-calorico
+```
+
+### Instalando Dependências
+```bash
+cd server
+npm install
+```
+### Configurando a porta que será inciado o servidor
+Pode ser criado um arquivo ".env" na pasta "server" para escolher a porta que o servidor irá iniciar
+```bash
+PORT = 8180
+```
+Caso não seja criado o arquivo o servidor irá executar na porta 8080
+
+### Executando o servidor
+```bash
+npm run server
+```
+Após isso basta acessar o link exibido no seu console
+
 ## Tecnologias utilizadas
 
 ### Front-End
@@ -22,3 +48,4 @@ Aplicativo Web desenvolvido com a finalidade de calcular o IMC(Índice de massa 
 - NodeJS
 - Express
 - Nodemon
+- Dotenv
