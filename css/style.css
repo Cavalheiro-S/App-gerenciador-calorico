@@ -1,0 +1,75 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    box-sizing: border-box;
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr 10vh;
+    height: 100%;
+    margin: 0%;
+}
+header{
+    background-color: #35BA9B;
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.logo{
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    color: #424852;
+    display: flex;
+    font-size: 2rem;
+    margin: 0 3rem;
+}
+.logo img{
+    border-radius: 0px 10px 10px 0px;
+    height: 71px;
+    margin-left: 10px;
+    width: 85px;
+}
+
+.logoTitle{
+    margin: 0px 10px 0px 10px
+}
+
+main{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+
+.title{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.subTitle{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: #35BA9B;
+    grid-column: 1/2; 
+    grid-row: 3/4;
+    width: 100%;
+}
