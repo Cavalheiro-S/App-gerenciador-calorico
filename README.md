@@ -19,12 +19,13 @@ Aplicativo Web desenvolvido com a finalidade de calcular o IMC(Índice de massa 
 ### Clonando o repositório
 ```bash
 git clone https://github.com/Cavalheiro-S/App-gerenciador-calorico.git
-cd App-gerenciador-calorico
 ```
-
+### Acesse a pasta
+```bash
+cd App-gerenciador-calorico/server
+```
 ### Instalando Dependências
 ```bash
-cd server
 npm install
 ```
 ### Configurando a porta que será inciado o servidor
